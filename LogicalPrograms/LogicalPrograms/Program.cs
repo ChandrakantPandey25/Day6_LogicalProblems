@@ -8,11 +8,15 @@ namespace LogicalPrograms
         {
             Console.WriteLine("Logical Problems");
             Console.WriteLine("Enter 1 for Fibonacci Series");
+            Console.WriteLine("Enter 2 for Perfect Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
                 case 1:
                     FibonacciSeries series = new FibonacciSeries();
+                    break;
+                case 2:
+                    PerfectNumber perfectNum = new PerfectNumber();
                     break;
                 default:
                     Console.WriteLine("Enter Valid Number");
