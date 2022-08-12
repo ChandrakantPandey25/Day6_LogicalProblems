@@ -12,6 +12,7 @@ namespace LogicalPrograms
             Console.WriteLine("Enter 3 for Prime Number");
             Console.WriteLine("Enter 4 to reverse Number");
             Console.WriteLine("Enter 5 to coupon Number");
+            Console.WriteLine("Enter 6 for StopWatch");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -29,6 +30,9 @@ namespace LogicalPrograms
                     break;
                 case 5:
                     CouponNumber coupon = new CouponNumber();
+                    break;
+                case 6:
+                    StopWatch watch = new StopWatch();
                     break;
                 default:
                     Console.WriteLine("Enter Valid Number");
