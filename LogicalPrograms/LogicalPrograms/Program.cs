@@ -11,6 +11,7 @@ namespace LogicalPrograms
             Console.WriteLine("Enter 2 for Perfect Number");
             Console.WriteLine("Enter 3 for Prime Number");
             Console.WriteLine("Enter 4 to reverse Number");
+            Console.WriteLine("Enter 5 to coupon Number");
             int option = Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -25,6 +26,9 @@ namespace LogicalPrograms
                     break;
                 case 4:
                     ReverseNumber revNum = new ReverseNumber();
+                    break;
+                case 5:
+                    CouponNumber coupon = new CouponNumber();
                     break;
                 default:
                     Console.WriteLine("Enter Valid Number");
